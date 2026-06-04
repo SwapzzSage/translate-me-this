@@ -31,10 +31,10 @@ nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo lang menu";
-    column-gap: 18px;
+    column-gap: 8px;
     row-gap: 0;
     align-items: center;
-    padding: 14px 18px 16px;
+    padding: 12px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -112,10 +112,10 @@ nav.open {
 
 .logo-crop {
     display: block;
-    height: 52px;
+    height: 42px;
     overflow: hidden;
     position: relative;
-    width: 118px;
+    width: 96px;
 }
 
 .logo img {
@@ -125,7 +125,7 @@ nav.open {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 118px;
+    width: 96px;
 }
 
 .yellow { color: #FFE600; }
@@ -165,7 +165,7 @@ nav.open {
 .nav-actions {
     align-items: center;
     display: flex;
-    gap: 8px;
+    gap: 6px;
     grid-area: lang;
     justify-content: flex-end;
     justify-self: end;
@@ -177,16 +177,23 @@ nav.open {
 }
 
 #langToggle {
+    align-items: center;
     grid-area: lang;
     justify-self: end;
     background: #FFE600;
     color: #422954;
     border: none;
-    padding: 8px 14px;
+    display: inline-flex;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 11px;
+    height: 36px;
+    justify-content: center;
+    min-width: 40px;
+    padding: 0 10px;
     cursor: pointer;
     border-radius: 4px;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .contact-info-toggle {
@@ -197,15 +204,21 @@ nav.open {
     color: #422954;
     cursor: pointer;
     display: inline-flex;
+    font-size: 11px;
+    font-weight: 900;
+    gap: 6px;
     height: 36px;
     justify-content: center;
-    padding: 0;
-    width: 38px;
+    line-height: 1;
+    padding: 0 8px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .contact-info-toggle svg {
-    height: 18px;
-    width: 18px;
+    flex: 0 0 auto;
+    height: 14px;
+    width: 14px;
 }
 
 .contact-info-panel[hidden] {
@@ -804,6 +817,7 @@ footer p {
     nav {
         grid-template-columns: 1fr auto 1fr;
         grid-template-areas: "logo links lang";
+        column-gap: 18px;
         padding: 16px 40px;
     }
 
@@ -845,14 +859,22 @@ footer p {
     }
 
     #langToggle {
+        height: 38px;
         justify-self: end;
-        padding: 8px 20px;
-        font-size: 16px;
+        font-size: 14px;
+        min-width: 52px;
+        padding: 0 16px;
     }
 
     .contact-info-toggle {
+        font-size: 14px;
         height: 38px;
-        width: 40px;
+        padding: 0 16px;
+    }
+
+    .contact-info-toggle svg {
+        height: 17px;
+        width: 17px;
     }
 
     .breadcrumbs {
@@ -959,6 +981,39 @@ footer p {
 }
 
 @media (max-width: 390px) {
+    nav {
+        column-gap: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo-crop {
+        height: 38px;
+        width: 86px;
+    }
+
+    .logo img {
+        width: 86px;
+    }
+
+    #langToggle {
+        min-width: 38px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .contact-info-toggle {
+        font-size: 10px;
+        gap: 4px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .contact-info-toggle svg {
+        height: 13px;
+        width: 13px;
+    }
+
     .nav-links {
         gap: 8px;
     }

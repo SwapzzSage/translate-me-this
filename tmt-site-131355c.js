@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <rect x="7" y="2" width="10" height="20" rx="2"></rect>
                     <path d="M11 18h2"></path>
                 </svg>
+                <span>Cotiza aquí</span>
             `;
             navActions.appendChild(contactButton);
         }
