@@ -375,7 +375,7 @@ nav.open {
 }
 
 /* SECTIONS */
-#about, #services, #contact, #why-us {
+#about, #services, #contact, #why-us, .faq-section {
     border-top: 8px solid #FFE600;
     min-height: 100svh;
     padding: 72px 20px;
@@ -383,7 +383,7 @@ nav.open {
     text-align: center;
 }
 
-#about h1, #about h2, #services h1, #services h2, #contact h2, #why-us h2 {
+#about h1, #about h2, #services h1, #services h2, #contact h2, #why-us h2, .faq-section h1 {
     font-size: 30px;
     font-weight: 900;
     color: #422954;
@@ -643,6 +643,82 @@ nav.open {
 
 .services-cta {
     margin-top: 34px;
+}
+
+/* FAQ */
+.faq-section {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.faq-category {
+    border-bottom: 3px solid #FFE600;
+    color: #422954;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 40px 0 20px;
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.faq-question {
+    align-items: center;
+    background-color: #f9f9f9;
+    border-left: 5px solid #FFE600;
+    border-radius: 4px;
+    color: #422954;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 900;
+    justify-content: space-between;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    padding: 14px 18px;
+}
+
+.faq-question:hover {
+    background-color: rgba(255, 230, 0, 0.18);
+}
+
+.faq-answer {
+    background-color: #ffffff;
+    border-left: 5px solid #dddddd;
+    border-radius: 0 0 4px 4px;
+    color: #555555;
+    display: none;
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 14px 18px;
+}
+
+.faq-answer.open {
+    display: block;
+}
+
+.arrow {
+    color: #422954;
+    font-size: 18px;
+    line-height: 1;
+    transition: transform 0.3s;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+.faq-section > .section-kicker,
+.faq-section > h1,
+.faq-section > .faq-category,
+.faq-section > .faq-item {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
 .about-highlights {
@@ -918,7 +994,7 @@ footer p {
         font-size: 18px;
     }
 
-    #about, #services, #contact, #why-us {
+    #about, #services, #contact, #why-us, .faq-section {
         padding: 96px 40px;
         scroll-margin-top: 89px;
     }
@@ -927,7 +1003,7 @@ footer p {
         padding-top: 64px;
     }
 
-    #about h1, #about h2, #services h1, #services h2, #contact h2, #why-us h2 {
+    #about h1, #about h2, #services h1, #services h2, #contact h2, #why-us h2, .faq-section h1 {
         font-size: 36px;
         margin-bottom: 16px;
     }
