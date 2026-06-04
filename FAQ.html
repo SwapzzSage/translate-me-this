@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ – Translate Me This</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=b82455a">
     <style>
         .faq-section { max-width: 800px; margin: 0 auto; padding: 60px 40px; }
         .faq-category { color: #4A2060; font-size: 22px; font-weight: 900; margin: 40px 0 20px; border-bottom: 3px solid #FFE600; padding-bottom: 8px; }
@@ -25,7 +25,7 @@
     <nav>
     <a href="index.html" class="logo" aria-label="Translate Me This home">
     <span class="logo-crop">
-        <img src="TMD.png" alt="Translate Me This">
+        <img src="TMD.png?v=b82455a" alt="Translate Me This">
     </span>
 </a>
         <ul class="nav-links">
@@ -201,7 +201,7 @@
 <footer>
     <a href="index.html" class="logo" aria-label="Translate Me This home">
         <span class="logo-crop">
-            <img src="TMD.png" alt="Translate Me This">
+            <img src="TMD.png?v=b82455a" alt="Translate Me This">
         </span>
     </a>
 
@@ -213,28 +213,11 @@
     <script>
         function toggle(el) {
             const answer = el.nextElementSibling;
-            const arrow = el.querySelector('.arrow');
-            answer.classList.toggle('open');
-            arrow.classList.toggle('open');
+            const arrow = el.querySelector(".arrow");
+            answer.classList.toggle("open");
+            arrow.classList.toggle("open");
         }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggle = document.getElementById('langToggle');
-            let currentLang = 'en';
-            toggle.addEventListener('click', function() {
-                if (currentLang === 'en') {
-                    document.querySelectorAll('.en').forEach(el => el.classList.add('hidden'));
-                    document.querySelectorAll('.es').forEach(el => el.classList.remove('hidden'));
-                    toggle.textContent = 'EN';
-                    currentLang = 'es';
-                } else {
-                    document.querySelectorAll('.es').forEach(el => el.classList.add('hidden'));
-                    document.querySelectorAll('.en').forEach(el => el.classList.remove('hidden'));
-                    toggle.textContent = 'ES';
-                    currentLang = 'en';
-                }
-            });
-        });
     </script>
+    <script src="main.js?v=b82455a"></script>
 </body>
 </html>
