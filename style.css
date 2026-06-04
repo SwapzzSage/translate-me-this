@@ -652,7 +652,9 @@ footer .logo {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 footer .logo img {
