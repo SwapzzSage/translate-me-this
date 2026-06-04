@@ -5,6 +5,64 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-links a");
     const serviceOptions = document.querySelectorAll(".service-option");
     const documentType = document.querySelector('select[name="document-type"]');
+    const supportedLanguages = ["en", "es"];
+
+    const getCurrentLanguage = () => {
+        const urlLanguage = new URLSearchParams(window.location.search).get("lang");
+        const storedLanguage = window.localStorage.getItem("tmt-language");
+
+        if (supportedLanguages.includes(urlLanguage)) {
+            return urlLanguage;
+        }
+
+        if (supportedLanguages.includes(storedLanguage)) {
+            return storedLanguage;
+        }
+
+        return "en";
+    };
+
+    const setLanguage = language => {
+        const activeLanguage = supportedLanguages.includes(language) ? language : "en";
+
+        document.querySelectorAll(".en").forEach(el => {
+            el.classList.toggle("hidden", activeLanguage !== "en");
+        });
+
+        document.querySelectorAll(".es").forEach(el => {
+            el.classList.toggle("hidden", activeLanguage !== "es");
+        });
+
+        if (langToggle) {
+            langToggle.textContent = activeLanguage === "en" ? "ES" : "EN";
+        }
+
+        window.localStorage.setItem("tmt-language", activeLanguage);
+        document.documentElement.lang = activeLanguage;
+    };
+
+    const updateInternalLinks = language => {
+        document.querySelectorAll("a[href]").forEach(link => {
+            const rawHref = link.getAttribute("href");
+
+            if (!rawHref || rawHref.startsWith("mailto:") || rawHref.startsWith("tel:")) {
+                return;
+            }
+
+            const url = new URL(rawHref, window.location.href);
+
+            if (url.origin !== window.location.origin) {
+                return;
+            }
+
+            url.searchParams.set("lang", language);
+            link.href = `${url.pathname}${url.search}${url.hash}`;
+        });
+    };
+
+    let currentLanguage = getCurrentLanguage();
+    setLanguage(currentLanguage);
+    updateInternalLinks(currentLanguage);
 
     if (documentType) {
         const selectedService = new URLSearchParams(window.location.search).get("service");
@@ -16,15 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (langToggle) {
         langToggle.addEventListener("click", () => {
-            document.querySelectorAll(".en").forEach(el => {
-                el.classList.toggle("hidden");
-            });
-
-            document.querySelectorAll(".es").forEach(el => {
-                el.classList.toggle("hidden");
-            });
-
-            langToggle.textContent = langToggle.textContent === "ES" ? "EN" : "ES";
+            currentLanguage = currentLanguage === "en" ? "es" : "en";
+            setLanguage(currentLanguage);
+            updateInternalLinks(currentLanguage);
         });
     }
 
