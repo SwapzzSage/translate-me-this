@@ -808,6 +808,28 @@ footer p {
     color: #FFE600;
 }
 
+.footer-social {
+    margin-top: 12px;
+}
+
+.footer-social a {
+    align-items: center;
+    color: #ffffff;
+    display: inline-flex;
+    font-weight: 700;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #FFE600;
+}
+
+.footer-social svg {
+    height: 20px;
+    width: 20px;
+}
+
 /* BILINGUE */
 .hidden {
     display: none !important;
