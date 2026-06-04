@@ -16,6 +16,14 @@ body {
     color: #333333;
 }
 
+.faq-page {
+    background-color: #ffffff;
+}
+
+.faq-page .faq-section {
+    background-color: #ffffff;
+}
+
 /* NAVBAR */
 nav {
     background-color: #422954;
