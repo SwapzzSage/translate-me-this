@@ -37,8 +37,8 @@ nav {
     grid-area: links;
     list-style: none;
     display: grid;
-    gap: 8px;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     overflow: visible;
     position: static;
     transform: none;
@@ -51,10 +51,13 @@ nav {
 }
 
 .nav-links a {
+    align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 4px;
     color: #ffffff;
-    display: block;
+    display: flex;
+    justify-content: center;
+    min-height: 48px;
     text-decoration: none;
     font-size: 12px;
     font-weight: 700;
@@ -64,7 +67,7 @@ nav {
     padding: 10px 6px;
     text-align: center;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .nav-links a:hover {
@@ -708,7 +711,9 @@ footer p {
     .nav-links a {
         font-size: 14px;
         letter-spacing: 0.4px;
+        min-height: 0;
         padding: 10px 16px;
+        white-space: nowrap;
     }
 
     .services-dropdown {
@@ -829,13 +834,13 @@ footer p {
 
 @media (max-width: 390px) {
     .nav-links {
-        gap: 6px;
+        gap: 8px;
     }
 
     .nav-links a {
-        font-size: 11px;
-        padding-left: 4px;
-        padding-right: 4px;
+        font-size: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     #hero h1 {
