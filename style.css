@@ -12,19 +12,19 @@ html {
 body {
     font-family: Arial, sans-serif;
     font-weight: 400;
-    background-color: #ffffff;
+    background-color: #422954;
     color: #333333;
 }
 
 /* NAVBAR */
 nav {
     background-color: #422954;
+    box-shadow: 0 1px 0 #422954;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-        "logo lang menu"
-        "links links links";
-    gap: 14px 18px;
+    grid-template-areas: "logo lang menu";
+    column-gap: 18px;
+    row-gap: 0;
     align-items: center;
     padding: 14px 18px 16px;
     position: sticky;
@@ -48,6 +48,13 @@ nav {
 
 nav.open .nav-links {
     display: grid;
+    margin-top: 14px;
+}
+
+nav.open {
+    grid-template-areas:
+        "logo lang menu"
+        "links links links";
 }
 
 .nav-links li {
