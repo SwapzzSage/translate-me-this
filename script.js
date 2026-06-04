@@ -6,6 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const serviceOptions = document.querySelectorAll(".service-option");
     const documentType = document.querySelector('select[name="document-type"]');
 
+    if (documentType) {
+        const selectedService = new URLSearchParams(window.location.search).get("service");
+
+        if (selectedService) {
+            documentType.value = selectedService;
+        }
+    }
+
     langToggle.addEventListener("click", () => {
         document.querySelectorAll(".en").forEach(el => {
             el.classList.toggle("hidden");
@@ -20,6 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     servicesMenuToggles.forEach(toggle => {
         toggle.addEventListener("click", event => {
+            if (window.matchMedia("(min-width: 760px)").matches) {
+                return;
+            }
+
             event.preventDefault();
             servicesMenu.classList.toggle("open");
         });

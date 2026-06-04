@@ -519,6 +519,14 @@ nav {
     padding: 8px 12px;
 }
 
+.services-detail-grid {
+    margin-top: 30px;
+}
+
+.services-cta {
+    margin-top: 34px;
+}
+
 .about-highlights {
     display: grid;
     grid-template-columns: 1fr;
