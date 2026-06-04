@@ -162,6 +162,20 @@ nav.open {
     color: #333333;
 }
 
+.nav-actions {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    grid-area: lang;
+    justify-content: flex-end;
+    justify-self: end;
+}
+
+.nav-actions #langToggle {
+    grid-area: auto;
+    justify-self: auto;
+}
+
 #langToggle {
     grid-area: lang;
     justify-self: end;
@@ -173,6 +187,89 @@ nav.open {
     font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
+}
+
+.contact-info-toggle {
+    align-items: center;
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
+    color: #422954;
+    cursor: pointer;
+    display: inline-flex;
+    height: 36px;
+    justify-content: center;
+    padding: 0;
+    width: 38px;
+}
+
+.contact-info-toggle svg {
+    height: 18px;
+    width: 18px;
+}
+
+.contact-info-panel[hidden] {
+    display: none;
+}
+
+.contact-info-panel {
+    align-items: center;
+    background: rgba(45, 28, 57, 0.72);
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 2000;
+}
+
+.contact-info-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 18px 48px rgba(45, 28, 57, 0.28);
+    color: #422954;
+    max-width: 360px;
+    padding: 24px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-info-card h2 {
+    color: #422954;
+    font-size: 24px;
+    margin: 0 0 16px;
+}
+
+.contact-info-card a {
+    color: #422954;
+    display: block;
+    font-weight: 800;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.contact-info-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-info-close {
+    align-items: center;
+    background: #FFE600;
+    border: none;
+    border-radius: 4px;
+    color: #422954;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 22px;
+    font-weight: 900;
+    height: 34px;
+    justify-content: center;
+    line-height: 1;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 34px;
 }
 
 .mobile-menu-toggle {
@@ -349,6 +446,7 @@ nav.open {
 .snapshot-grid div {
     background-color: #422954;
     border-radius: 8px;
+    min-width: 0;
     padding: 24px 16px;
 }
 
@@ -359,6 +457,11 @@ nav.open {
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 8px;
+}
+
+.snapshot-grid .language-pair {
+    font-size: 24px;
+    white-space: nowrap;
 }
 
 .snapshot-grid span {
@@ -631,11 +734,11 @@ nav.open {
 }
 
 #contact .btn {
-    display: inline-block;
+    display: block;
     cursor: pointer;
     border: none;
     font-family: inherit;
-    margin-top: 10px;
+    margin: 10px auto 0;
 }
 
 /* FOOTER */
@@ -745,6 +848,11 @@ footer p {
         justify-self: end;
         padding: 8px 20px;
         font-size: 16px;
+    }
+
+    .contact-info-toggle {
+        height: 38px;
+        width: 40px;
     }
 
     .breadcrumbs {
@@ -863,6 +971,10 @@ footer p {
 
     #hero h1 {
         font-size: 30px;
+    }
+
+    .snapshot-grid .language-pair {
+        font-size: 21px;
     }
 
     .featured-service,
