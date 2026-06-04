@@ -675,6 +675,23 @@ footer p {
     opacity: 0.8;
 }
 
+.footer-contact {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    justify-content: center;
+}
+
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #FFE600;
+}
+
 /* BILINGUE */
 .hidden {
     display: none !important;
