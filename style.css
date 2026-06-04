@@ -383,7 +383,7 @@ nav.open {
     text-align: center;
 }
 
-#about h2, #services h2, #contact h2, #why-us h2 {
+#about h1, #about h2, #services h1, #services h2, #contact h2, #why-us h2 {
     font-size: 30px;
     font-weight: 900;
     color: #422954;
@@ -927,7 +927,7 @@ footer p {
         padding-top: 64px;
     }
 
-    #about h2, #services h2, #contact h2, #why-us h2 {
+    #about h1, #about h2, #services h1, #services h2, #contact h2, #why-us h2 {
         font-size: 36px;
         margin-bottom: 16px;
     }
