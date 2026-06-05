@@ -617,6 +617,61 @@ nav.open {
     padding: 8px 12px;
 }
 
+.service-table-wrap {
+    overflow-x: auto;
+    padding: 0;
+}
+
+.service-table {
+    border-collapse: collapse;
+    min-width: 680px;
+    width: 100%;
+}
+
+.service-table th,
+.service-table td {
+    border-bottom: 1px solid rgba(66, 41, 84, 0.12);
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.45;
+    padding: 16px 18px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.service-table th {
+    background-color: #422954;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.service-table td:first-child {
+    color: #422954;
+    font-weight: 900;
+}
+
+.service-table a {
+    background-color: #FFE600;
+    border-radius: 4px;
+    color: #422954;
+    display: inline-flex;
+    font-size: 13px;
+    font-weight: 900;
+    justify-content: center;
+    line-height: 1;
+    padding: 10px 12px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.service-table a:hover {
+    background-color: #422954;
+    color: #ffffff;
+}
+
 .services-cta {
     margin-top: 34px;
 }
@@ -1163,5 +1218,55 @@ footer p {
     .card,
     .about-highlights div {
         padding: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    .service-table-wrap {
+        padding: 0;
+    }
+
+    .service-table {
+        min-width: 0;
+    }
+
+    .service-table thead {
+        display: none;
+    }
+
+    .service-table,
+    .service-table tbody,
+    .service-table tr,
+    .service-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .service-table tr {
+        border-bottom: 1px solid rgba(66, 41, 84, 0.12);
+        padding: 14px 16px;
+    }
+
+    .service-table tr:last-child {
+        border-bottom: 0;
+    }
+
+    .service-table td {
+        border-bottom: 0;
+        padding: 4px 0;
+        text-align: center;
+    }
+
+    .service-table td:first-child {
+        font-size: 17px;
+    }
+
+    .service-table td:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .service-table a {
+        margin-top: 8px;
+        width: 100%;
     }
 }
