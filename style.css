@@ -1179,9 +1179,10 @@ footer p {
 }
 
 .context-link-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 18px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
     margin: 28px auto 0;
     max-width: 1040px;
     text-align: left;
@@ -1197,6 +1198,8 @@ footer p {
     border-radius: 8px;
     color: #422954;
     display: block;
+    flex: 1 1 220px;
+    max-width: 246px;
     min-width: 0;
     padding: 20px;
     text-decoration: none;
@@ -1261,11 +1264,12 @@ footer p {
 
     .context-link-grid {
         gap: 12px;
-        grid-template-columns: 1fr;
         margin-top: 22px;
     }
 
     .context-link-card {
+        flex-basis: 100%;
+        max-width: none;
         padding: 16px;
     }
 
