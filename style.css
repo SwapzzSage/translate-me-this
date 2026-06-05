@@ -1169,3 +1169,76 @@ footer p {
 .service-matrix .service-matrix-head span {
     color: #FFE600;
 }
+
+
+/* CONTEXTUAL SEO LINKS */
+.context-links-section {
+    background: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.context-link-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 28px auto 0;
+    max-width: 1040px;
+    text-align: left;
+}
+
+.context-link-grid.compact {
+    margin-top: 18px;
+}
+
+.context-link-card {
+    background: #ffffff;
+    border: 1px solid rgba(66, 41, 84, 0.16);
+    border-radius: 8px;
+    color: #422954;
+    display: block;
+    min-width: 0;
+    padding: 20px;
+    text-decoration: none;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.context-link-card:hover {
+    border-color: #FFE600;
+    transform: translateY(-2px);
+}
+
+.context-link-card strong {
+    color: #422954;
+    display: block;
+    font-size: 17px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.context-link-card span {
+    color: #555555;
+    display: block;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.about-service-links,
+.service-related-links {
+    margin: 34px 0;
+}
+
+.about-service-links h2,
+.service-related-links h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.service-related-links {
+    text-align: left;
+}
+
+
+.compact-context {
+    padding-top: 54px;
+}
