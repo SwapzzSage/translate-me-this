@@ -348,81 +348,6 @@ nav.open {
     max-width: 720px;
 }
 
-/* VALUE SNAPSHOT */
-#value-snapshot {
-    background-color: #ffffff;
-    padding: 46px 20px 58px;
-    text-align: center;
-}
-
-.trust-points {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px 18px;
-    justify-content: center;
-    margin: 0 auto 34px;
-    max-width: 900px;
-}
-
-.trust-points span {
-    color: #626A78;
-    font-size: 15px;
-    line-height: 1.4;
-    padding-left: 26px;
-    position: relative;
-}
-
-.trust-points span::before {
-    background-color: #FFE600;
-    border-radius: 999px;
-    color: #422954;
-    content: "✓";
-    font-size: 12px;
-    font-weight: 900;
-    height: 18px;
-    left: 0;
-    line-height: 18px;
-    position: absolute;
-    text-align: center;
-    top: 1px;
-    width: 18px;
-}
-
-.snapshot-grid {
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin: 0 auto;
-    max-width: 560px;
-}
-
-.snapshot-grid div {
-    background-color: #422954;
-    border-radius: 8px;
-    min-width: 0;
-    padding: 24px 16px;
-}
-
-.snapshot-grid strong {
-    color: #FFE600;
-    display: block;
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 1.1;
-    margin-bottom: 8px;
-}
-
-.snapshot-grid .language-pair {
-    font-size: 24px;
-    white-space: nowrap;
-}
-
-.snapshot-grid span {
-    color: rgba(255, 255, 255, 0.78);
-    display: block;
-    font-size: 15px;
-}
-
 /* WHY US */
 #why-us {
     background-color: #FFE600;
@@ -1087,15 +1012,6 @@ footer p {
         font-size: 22px;
     }
 
-    #value-snapshot {
-        padding: 58px 40px 72px;
-    }
-
-    .snapshot-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        max-width: 900px;
-    }
-
     .difference-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -1200,10 +1116,6 @@ footer p {
 
     #hero h1 {
         font-size: 30px;
-    }
-
-    .snapshot-grid .language-pair {
-        font-size: 21px;
     }
 
     .featured-service,
