@@ -1218,6 +1218,7 @@ footer p {
     font-size: 17px;
     line-height: 1.25;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .context-link-card span {
@@ -1225,6 +1226,7 @@ footer p {
     display: block;
     font-size: 15px;
     line-height: 1.55;
+    text-align: center;
 }
 
 .about-service-links,
