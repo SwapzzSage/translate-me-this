@@ -657,6 +657,10 @@ nav.open {
     text-transform: uppercase;
 }
 
+.service-matrix-head span {
+    color: #FFE600;
+}
+
 .service-matrix-row strong {
     color: #422954;
     font-size: 17px;
