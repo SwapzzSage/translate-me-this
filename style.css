@@ -638,6 +638,10 @@ nav.open {
     line-height: 1.45;
 }
 
+.service-matrix .service-matrix-head span {
+    color: #FFE600;
+}
+
 .service-matrix-row em {
     background-color: #FFE600;
     border-radius: 4px;
@@ -1207,4 +1211,8 @@ footer p {
         margin-top: 8px;
         width: 100%;
     }
+}
+
+.service-matrix .service-matrix-head span {
+    color: #FFE600;
 }
