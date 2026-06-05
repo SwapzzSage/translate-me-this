@@ -1185,7 +1185,7 @@ footer p {
     justify-content: center;
     margin: 28px auto 0;
     max-width: 1040px;
-    text-align: left;
+    text-align: center;
 }
 
 .context-link-grid.compact {
@@ -1202,6 +1202,7 @@ footer p {
     max-width: 246px;
     min-width: 0;
     padding: 20px;
+    text-align: center;
     text-decoration: none;
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
