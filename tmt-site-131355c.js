@@ -68,6 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         toggle.addEventListener("click", event => {
+            if (window.matchMedia("(max-width: 759px)").matches) {
+                return;
+            }
+
             event.preventDefault();
 
             navDropdowns.forEach(otherDropdown => {

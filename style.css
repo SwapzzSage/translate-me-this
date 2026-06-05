@@ -66,17 +66,14 @@ nav.open .nav-dropdown {
     min-width: 0;
 }
 
+/* Mobile uses Services as a normal hub link; child pages live on the services hub. */
 nav.open .dropdown-menu {
-    margin-top: 8px;
-    min-width: 0;
-    width: 100%;
+    display: none !important;
 }
 
-nav.open .dropdown-menu a {
-    justify-content: center;
-    min-width: 0;
-    overflow-wrap: anywhere;
-    width: 100%;
+nav.open .nav-dropdown-toggle::after {
+    content: "";
+    margin-left: 0;
 }
 
 nav.open {
