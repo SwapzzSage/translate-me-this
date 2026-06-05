@@ -493,6 +493,10 @@ nav.open {
     margin-bottom: 0;
 }
 
+.difference-note-cta {
+    margin-top: 10px;
+}
+
 /* ABOUT */
 #about {
     background-color: #ffffff;
