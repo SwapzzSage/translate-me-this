@@ -211,6 +211,7 @@ nav.open {
     justify-content: center;
     line-height: 1;
     padding: 0 8px;
+    text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -219,70 +220,6 @@ nav.open {
     flex: 0 0 auto;
     height: 14px;
     width: 14px;
-}
-
-.contact-info-panel[hidden] {
-    display: none;
-}
-
-.contact-info-panel {
-    align-items: center;
-    background: rgba(45, 28, 57, 0.72);
-    display: flex;
-    inset: 0;
-    justify-content: center;
-    padding: 20px;
-    position: fixed;
-    z-index: 2000;
-}
-
-.contact-info-card {
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 18px 48px rgba(45, 28, 57, 0.28);
-    color: #422954;
-    max-width: 360px;
-    padding: 24px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.contact-info-card h2 {
-    color: #422954;
-    font-size: 24px;
-    margin: 0 0 16px;
-}
-
-.contact-info-card a {
-    color: #422954;
-    display: block;
-    font-weight: 800;
-    margin: 10px 0;
-    text-decoration: none;
-}
-
-.contact-info-card a:hover {
-    text-decoration: underline;
-}
-
-.contact-info-close {
-    align-items: center;
-    background: #FFE600;
-    border: none;
-    border-radius: 4px;
-    color: #422954;
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 22px;
-    font-weight: 900;
-    height: 34px;
-    justify-content: center;
-    line-height: 1;
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    width: 34px;
 }
 
 .mobile-menu-toggle {

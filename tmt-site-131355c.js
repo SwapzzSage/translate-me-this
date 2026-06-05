@@ -58,12 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
         let contactButton = navActions.querySelector(".contact-info-toggle");
 
         if (!contactButton) {
-            contactButton = document.createElement("button");
+            contactButton = document.createElement("a");
             contactButton.className = "contact-info-toggle";
-            contactButton.type = "button";
-            contactButton.setAttribute("aria-label", "Open contact information");
-            contactButton.setAttribute("aria-haspopup", "dialog");
-            contactButton.setAttribute("aria-controls", "contactInfoPanel");
+            contactButton.href = "https://wa.me/50766753033";
+            contactButton.target = "_blank";
+            contactButton.rel = "noopener noreferrer";
+            contactButton.setAttribute("aria-label", "Get your quote on WhatsApp");
             contactButton.innerHTML = `
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="7" y="2" width="10" height="20" rx="2"></rect>
@@ -74,53 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             navActions.appendChild(contactButton);
         }
-
-        let contactPanel = document.getElementById("contactInfoPanel");
-
-        if (!contactPanel) {
-            contactPanel = document.createElement("div");
-            contactPanel.className = "contact-info-panel";
-            contactPanel.id = "contactInfoPanel";
-            contactPanel.setAttribute("role", "dialog");
-            contactPanel.setAttribute("aria-modal", "true");
-            contactPanel.setAttribute("aria-labelledby", "contactInfoTitle");
-            contactPanel.hidden = true;
-            contactPanel.innerHTML = `
-                <div class="contact-info-card">
-                    <button class="contact-info-close" type="button" aria-label="Close contact information">×</button>
-                    <h2 id="contactInfoTitle">
-                        <span class="en">Contact</span>
-                        <span class="es hidden">Contacto</span>
-                    </h2>
-                    <a href="mailto:info@translatemethis.com">info@translatemethis.com</a>
-                    <a href="https://wa.me/50766753033" target="_blank" rel="noopener noreferrer">+507 66753033</a>
-                </div>
-            `;
-            document.body.appendChild(contactPanel);
-        }
-
-        const closeButton = contactPanel.querySelector(".contact-info-close");
-        const openPanel = () => {
-            contactPanel.hidden = false;
-            closeButton.focus();
-        };
-        const closePanel = () => {
-            contactPanel.hidden = true;
-            contactButton.focus();
-        };
-
-        contactButton.addEventListener("click", openPanel);
-        closeButton.addEventListener("click", closePanel);
-        contactPanel.addEventListener("click", event => {
-            if (event.target === contactPanel) {
-                closePanel();
-            }
-        });
-        document.addEventListener("keydown", event => {
-            if (event.key === "Escape" && !contactPanel.hidden) {
-                closePanel();
-            }
-        });
     };
 
     const getCurrentLanguage = () => {
