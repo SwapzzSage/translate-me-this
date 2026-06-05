@@ -1242,3 +1242,50 @@ footer p {
 .compact-context {
     padding-top: 54px;
 }
+
+@media (max-width: 620px) {
+    .context-links-section {
+        padding: 44px 16px;
+    }
+
+    .context-links-section h2 {
+        font-size: 28px;
+        line-height: 1.12;
+        margin-bottom: 12px;
+    }
+
+    .context-links-section .section-intro {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .context-link-grid {
+        gap: 12px;
+        grid-template-columns: 1fr;
+        margin-top: 22px;
+    }
+
+    .context-link-card {
+        padding: 16px;
+    }
+
+    .context-link-card strong {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .context-link-card span {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .about-service-links,
+    .service-related-links {
+        margin: 26px 0;
+    }
+
+    .about-service-links h2,
+    .service-related-links h2 {
+        font-size: 24px;
+    }
+}
