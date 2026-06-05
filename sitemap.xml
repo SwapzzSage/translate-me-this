@@ -11,42 +11,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/"/>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.translatemethis.com/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services.html"/>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.translatemethis.com/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/acerca-de.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/about.html"/>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.translatemethis.com/FAQ.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/FAQ.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/preguntas-frecuentes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/FAQ.html"/>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.translatemethis.com/es/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/"/>
     <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/"/>
@@ -56,145 +20,181 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/"/>
+    <loc>https://www.translatemethis.com/services/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/"/>
     <lastmod>2026-06-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/servicios.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services.html"/>
+    <loc>https://www.translatemethis.com/es/servicios/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/"/>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/about/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/acerca-de.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/acerca-de.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/about.html"/>
+    <loc>https://www.translatemethis.com/es/acerca-de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/about/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/preguntas-frecuentes.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/FAQ.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/preguntas-frecuentes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/FAQ.html"/>
+    <loc>https://www.translatemethis.com/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/preguntas-frecuentes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/faq/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/services/immigration-translation.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/immigration-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-migratoria.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/immigration-translation.html"/>
+    <loc>https://www.translatemethis.com/es/preguntas-frecuentes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/preguntas-frecuentes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/faq/"/>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/contact/"/>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/contacto/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/contact/"/>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/services/immigration-translation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/immigration-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-migratoria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/immigration-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/servicios/traduccion-migratoria.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/immigration-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-migratoria.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/immigration-translation.html"/>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-migratoria/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/immigration-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-migratoria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/immigration-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/services/legal-translation.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/legal-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-legal.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/legal-translation.html"/>
+    <loc>https://www.translatemethis.com/services/legal-translation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/legal-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-legal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/legal-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/servicios/traduccion-legal.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/legal-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-legal.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/legal-translation.html"/>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-legal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/legal-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-legal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/legal-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/services/academic-translation.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/academic-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-academica.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/academic-translation.html"/>
+    <loc>https://www.translatemethis.com/services/academic-translation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/academic-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-academica/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/academic-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/servicios/traduccion-academica.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/academic-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-academica.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/academic-translation.html"/>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-academica/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/academic-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-academica/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/academic-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/services/apostille-translation.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/apostille-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-apostilla.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/apostille-translation.html"/>
+    <loc>https://www.translatemethis.com/services/apostille-translation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/apostille-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-apostilla/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/apostille-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/servicios/traduccion-apostilla.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/apostille-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-apostilla.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/apostille-translation.html"/>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-apostilla/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/apostille-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-apostilla/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/apostille-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/services/corporate-translation.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/corporate-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-corporativa.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/corporate-translation.html"/>
+    <loc>https://www.translatemethis.com/services/corporate-translation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/corporate-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-corporativa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/corporate-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/servicios/traduccion-corporativa.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/corporate-translation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-corporativa.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/corporate-translation.html"/>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-corporativa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/corporate-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-corporativa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/corporate-translation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/services/interpretation.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/interpretation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/interpretacion.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/interpretation.html"/>
+    <loc>https://www.translatemethis.com/services/interpretation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/interpretation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/interpretacion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/interpretation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.translatemethis.com/es/servicios/interpretacion.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/interpretation.html"/>
-    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/interpretacion.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/interpretation.html"/>
+    <loc>https://www.translatemethis.com/es/servicios/interpretacion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/interpretation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/interpretacion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/interpretation/"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>

@@ -51,11 +51,30 @@ document.addEventListener("DOMContentLoaded", () => {
             event_category: "lead",
             event_label: link.href
         });
+        window.gtag("event", "generate_lead", {
+            method: "whatsapp",
+            event_category: "lead",
+            event_label: link.href
+        });
     };
 
     document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => {
         link.addEventListener("click", () => trackOutboundWhatsApp(link));
     });
+
+    const contactForm = document.querySelector('#contact form');
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", () => {
+            if (typeof window.gtag === "function") {
+                window.gtag("event", "generate_lead", {
+                    method: "contact_form",
+                    event_category: "lead",
+                    event_label: window.location.pathname
+                });
+            }
+        });
+    }
 
     const navLinks = document.querySelectorAll(".nav-links a");
 
