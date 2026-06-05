@@ -4,44 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
     const serviceOptions = document.querySelectorAll(".service-option");
     const documentType = document.querySelector('select[name="document-type"]');
-    const supportedLanguages = ["en", "es"];
+    const pageLanguage = document.documentElement.lang === "es" ? "es" : "en";
 
-    const normalizeNavigation = () => {
-        const navList = document.querySelector(".nav-links");
-
-        if (!navList) {
-            return;
-        }
-
-        const contactHref = window.location.pathname.endsWith("/") || window.location.pathname.endsWith("/index.html")
-            ? "#contact"
-            : "index.html#contact";
-
-        navList.innerHTML = `
-            <li>
-                <a href="index.html" class="en">Home</a>
-                <a href="index.html" class="es hidden">Inicio</a>
-            </li>
-            <li>
-                <a href="services.html" class="en">Services</a>
-                <a href="services.html" class="es hidden">Servicios</a>
-            </li>
-            <li>
-                <a href="about.html" class="en">About</a>
-                <a href="about.html" class="es hidden">Acerca de</a>
-            </li>
-            <li>
-                <a href="FAQ.html" class="en">FAQ</a>
-                <a href="FAQ.html" class="es hidden">FAQ</a>
-            </li>
-            <li>
-                <a href="${contactHref}" class="en">Contact</a>
-                <a href="${contactHref}" class="es hidden">Contacto</a>
-            </li>
-        `;
-    };
-
-    const setupContactInfo = () => {
+    const setupQuoteButton = () => {
         if (!nav || !langToggle) {
             return;
         }
@@ -55,87 +20,29 @@ document.addEventListener("DOMContentLoaded", () => {
             navActions.appendChild(langToggle);
         }
 
-        let contactButton = navActions.querySelector(".contact-info-toggle");
-
-        if (!contactButton) {
-            contactButton = document.createElement("a");
-            contactButton.className = "contact-info-toggle";
-            contactButton.href = "https://wa.me/50766753033";
-            contactButton.target = "_blank";
-            contactButton.rel = "noopener noreferrer";
-            contactButton.setAttribute("aria-label", "Get your quote on WhatsApp");
-            contactButton.innerHTML = `
-                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="7" y="2" width="10" height="20" rx="2"></rect>
-                    <path d="M11 18h2"></path>
-                </svg>
-                <span class="en">Get your quote</span>
-                <span class="es hidden">Cotiza aquí</span>
-            `;
-            navActions.appendChild(contactButton);
-        }
-    };
-
-    const getCurrentLanguage = () => {
-        const urlLanguage = new URLSearchParams(window.location.search).get("lang");
-        const storedLanguage = window.localStorage.getItem("tmt-language");
-
-        if (supportedLanguages.includes(urlLanguage)) {
-            return urlLanguage;
+        if (navActions.querySelector(".contact-info-toggle")) {
+            return;
         }
 
-        if (supportedLanguages.includes(storedLanguage)) {
-            return storedLanguage;
-        }
-
-        return "en";
+        const quoteButton = document.createElement("a");
+        quoteButton.className = "contact-info-toggle";
+        quoteButton.href = "https://wa.me/50766753033";
+        quoteButton.target = "_blank";
+        quoteButton.rel = "noopener noreferrer";
+        quoteButton.setAttribute("aria-label", pageLanguage === "es" ? "Cotiza por WhatsApp" : "Get your quote on WhatsApp");
+        quoteButton.innerHTML = `
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="2" width="10" height="20" rx="2"></rect>
+                <path d="M11 18h2"></path>
+            </svg>
+            <span>${pageLanguage === "es" ? "Cotiza aquí" : "Get your quote"}</span>
+        `;
+        navActions.appendChild(quoteButton);
     };
 
-    const setLanguage = language => {
-        const activeLanguage = supportedLanguages.includes(language) ? language : "en";
-
-        document.querySelectorAll(".en").forEach(el => {
-            el.classList.toggle("hidden", activeLanguage !== "en");
-        });
-
-        document.querySelectorAll(".es").forEach(el => {
-            el.classList.toggle("hidden", activeLanguage !== "es");
-        });
-
-        if (langToggle) {
-            langToggle.textContent = activeLanguage === "en" ? "ES" : "EN";
-        }
-
-        window.localStorage.setItem("tmt-language", activeLanguage);
-        document.documentElement.lang = activeLanguage;
-    };
-
-    const updateInternalLinks = language => {
-        document.querySelectorAll("a[href]").forEach(link => {
-            const rawHref = link.getAttribute("href");
-
-            if (!rawHref || rawHref.startsWith("mailto:") || rawHref.startsWith("tel:")) {
-                return;
-            }
-
-            const url = new URL(rawHref, window.location.href);
-
-            if (url.origin !== window.location.origin) {
-                return;
-            }
-
-            url.searchParams.set("lang", language);
-            link.href = `${url.pathname}${url.search}${url.hash}`;
-        });
-    };
-
-    normalizeNavigation();
-    setupContactInfo();
+    setupQuoteButton();
 
     const navLinks = document.querySelectorAll(".nav-links a");
-    let currentLanguage = getCurrentLanguage();
-    setLanguage(currentLanguage);
-    updateInternalLinks(currentLanguage);
 
     if (documentType) {
         const selectedService = new URLSearchParams(window.location.search).get("service");
@@ -143,14 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (selectedService) {
             documentType.value = selectedService;
         }
-    }
-
-    if (langToggle) {
-        langToggle.addEventListener("click", () => {
-            currentLanguage = currentLanguage === "en" ? "es" : "en";
-            setLanguage(currentLanguage);
-            updateInternalLinks(currentLanguage);
-        });
     }
 
     if (mobileMenuToggle && nav) {

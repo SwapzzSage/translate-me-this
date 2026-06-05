@@ -193,6 +193,7 @@ nav.open {
     cursor: pointer;
     border-radius: 4px;
     line-height: 1;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
