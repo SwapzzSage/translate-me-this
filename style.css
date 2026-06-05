@@ -648,10 +648,10 @@ nav.open {
 .service-matrix-head {
     background-color: #422954;
     border-bottom: 0;
-    color: #ffffff;
+    color: #FFE600;
     font-size: 12px;
     font-weight: 900;
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
     padding-bottom: 14px;
     padding-top: 14px;
     text-transform: uppercase;
