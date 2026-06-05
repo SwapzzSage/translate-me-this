@@ -473,6 +473,24 @@ nav.open {
     max-width: 320px;
 }
 
+.difference-note {
+    color: #422954;
+    margin: 54px auto 0;
+    max-width: 860px;
+    text-align: center;
+}
+
+.difference-note p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.65;
+    margin: 0 auto 18px;
+}
+
+.difference-note p:last-child {
+    margin-bottom: 0;
+}
+
 /* ABOUT */
 #about {
     background-color: #ffffff;
