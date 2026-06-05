@@ -494,7 +494,14 @@ nav.open {
 }
 
 .difference-note-cta {
+    background-color: #422954;
+    color: #FFE600;
     margin-top: 10px;
+}
+
+.difference-note-cta:hover {
+    background-color: #2d1c39;
+    color: #FFE600;
 }
 
 /* ABOUT */
