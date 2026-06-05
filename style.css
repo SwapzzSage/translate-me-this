@@ -56,7 +56,27 @@ nav {
 
 nav.open .nav-links {
     display: grid;
+    grid-template-columns: 1fr;
     margin-top: 14px;
+}
+
+/* Mobile nav stays in one column so dropdown links never overflow. */
+nav.open .nav-dropdown {
+    grid-column: 1 / -1;
+    min-width: 0;
+}
+
+nav.open .dropdown-menu {
+    margin-top: 8px;
+    min-width: 0;
+    width: 100%;
+}
+
+nav.open .dropdown-menu a {
+    justify-content: center;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    width: 100%;
 }
 
 nav.open {
@@ -1125,6 +1145,7 @@ footer p {
 
     .nav-links {
         gap: 8px;
+        grid-template-columns: 1fr;
     }
 
     .nav-links a {
