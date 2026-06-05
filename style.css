@@ -617,57 +617,78 @@ nav.open {
     padding: 8px 12px;
 }
 
-.service-table-wrap {
-    overflow-x: auto;
-    padding: 0;
-}
-
-.service-table {
-    border-collapse: collapse;
-    min-width: 680px;
-    width: 100%;
-}
-
-.service-table th,
-.service-table td {
-    border-bottom: 1px solid rgba(66, 41, 84, 0.12);
-    color: #555555;
-    font-size: 15px;
-    line-height: 1.45;
-    padding: 16px 18px;
+.service-matrix {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border-top: 6px solid #FFE600;
+    box-shadow: 0 12px 28px rgba(66, 41, 84, 0.08);
+    display: grid;
+    gap: 0;
+    margin: 30px auto 0;
+    max-width: 980px;
+    overflow: hidden;
     text-align: left;
-    vertical-align: middle;
 }
 
-.service-table th {
+.service-matrix-row {
+    align-items: center;
+    border-bottom: 1px solid rgba(66, 41, 84, 0.12);
+    color: inherit;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: minmax(190px, 1.1fr) minmax(220px, 1.4fr) auto;
+    padding: 18px 22px;
+    text-decoration: none;
+}
+
+.service-matrix-row:last-child {
+    border-bottom: 0;
+}
+
+.service-matrix-head {
     background-color: #422954;
+    border-bottom: 0;
     color: #ffffff;
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 0.8px;
+    padding-bottom: 14px;
+    padding-top: 14px;
     text-transform: uppercase;
 }
 
-.service-table td:first-child {
+.service-matrix-row strong {
     color: #422954;
+    font-size: 17px;
     font-weight: 900;
+    line-height: 1.25;
 }
 
-.service-table a {
+.service-matrix-row span {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.service-matrix-row em {
     background-color: #FFE600;
     border-radius: 4px;
     color: #422954;
     display: inline-flex;
     font-size: 13px;
+    font-style: normal;
     font-weight: 900;
     justify-content: center;
     line-height: 1;
-    padding: 10px 12px;
-    text-decoration: none;
+    padding: 11px 14px;
     white-space: nowrap;
 }
 
-.service-table a:hover {
+a.service-matrix-row:hover {
+    background-color: rgba(255, 230, 0, 0.13);
+}
+
+a.service-matrix-row:hover em {
     background-color: #422954;
     color: #ffffff;
 }
@@ -1222,50 +1243,31 @@ footer p {
 }
 
 @media (max-width: 620px) {
-    .service-table-wrap {
-        padding: 0;
+    .service-matrix {
+        margin-top: 24px;
     }
 
-    .service-table {
-        min-width: 0;
-    }
-
-    .service-table thead {
+    .service-matrix-head {
         display: none;
     }
 
-    .service-table,
-    .service-table tbody,
-    .service-table tr,
-    .service-table td {
-        display: block;
-        width: 100%;
-    }
-
-    .service-table tr {
+    .service-matrix-row {
+        gap: 8px;
+        grid-template-columns: 1fr;
         border-bottom: 1px solid rgba(66, 41, 84, 0.12);
-        padding: 14px 16px;
-    }
-
-    .service-table tr:last-child {
-        border-bottom: 0;
-    }
-
-    .service-table td {
-        border-bottom: 0;
-        padding: 4px 0;
+        padding: 18px 18px;
         text-align: center;
     }
 
-    .service-table td:first-child {
+    .service-matrix-row strong {
         font-size: 17px;
     }
 
-    .service-table td:nth-child(2) {
+    .service-matrix-row span {
         font-size: 14px;
     }
 
-    .service-table a {
+    .service-matrix-row em {
         margin-top: 8px;
         width: 100%;
     }
