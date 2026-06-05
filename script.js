@@ -68,11 +68,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         toggle.addEventListener("click", event => {
-            if (window.matchMedia("(max-width: 759px)").matches) {
-                event.preventDefault();
-                const isOpen = dropdown.classList.toggle("open");
-                toggle.setAttribute("aria-expanded", String(isOpen));
-            }
+            event.preventDefault();
+
+            navDropdowns.forEach(otherDropdown => {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove("open");
+                    const otherToggle = otherDropdown.querySelector(".nav-dropdown-toggle");
+                    if (otherToggle) {
+                        otherToggle.setAttribute("aria-expanded", "false");
+                    }
+                }
+            });
+
+            const isOpen = dropdown.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", String(isOpen));
         });
     });
 
