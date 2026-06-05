@@ -42,6 +42,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setupQuoteButton();
 
+    const trackOutboundWhatsApp = link => {
+        if (typeof window.gtag !== "function") {
+            return;
+        }
+
+        window.gtag("event", "whatsapp_click", {
+            event_category: "lead",
+            event_label: link.href
+        });
+    };
+
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => {
+        link.addEventListener("click", () => trackOutboundWhatsApp(link));
+    });
+
     const navLinks = document.querySelectorAll(".nav-links a");
     const navDropdowns = document.querySelectorAll(".nav-dropdown");
 
