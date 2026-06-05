@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const navLinks = document.querySelectorAll(".nav-links a");
-    const navDropdowns = document.querySelectorAll(".nav-dropdown");
 
     if (documentType) {
         const selectedService = new URLSearchParams(window.location.search).get("service");
@@ -75,53 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    navDropdowns.forEach(dropdown => {
-        const toggle = dropdown.querySelector(".nav-dropdown-toggle");
-
-        if (!toggle) {
-            return;
-        }
-
-        toggle.addEventListener("click", event => {
-            if (window.matchMedia("(max-width: 759px)").matches) {
-                return;
-            }
-
-            event.preventDefault();
-
-            navDropdowns.forEach(otherDropdown => {
-                if (otherDropdown !== dropdown) {
-                    otherDropdown.classList.remove("open");
-                    const otherToggle = otherDropdown.querySelector(".nav-dropdown-toggle");
-                    if (otherToggle) {
-                        otherToggle.setAttribute("aria-expanded", "false");
-                    }
-                }
-            });
-
-            const isOpen = dropdown.classList.toggle("open");
-            toggle.setAttribute("aria-expanded", String(isOpen));
-        });
-    });
-
-    document.addEventListener("click", event => {
-        if (!event.target.closest(".nav-dropdown")) {
-            navDropdowns.forEach(dropdown => {
-                dropdown.classList.remove("open");
-                const toggle = dropdown.querySelector(".nav-dropdown-toggle");
-                if (toggle) {
-                    toggle.setAttribute("aria-expanded", "false");
-                }
-            });
-        }
-    });
-
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
-            if (link.classList.contains("nav-dropdown-toggle") && window.matchMedia("(max-width: 759px)").matches) {
-                return;
-            }
-
             if (nav && mobileMenuToggle) {
                 nav.classList.remove("open");
                 mobileMenuToggle.setAttribute("aria-expanded", "false");

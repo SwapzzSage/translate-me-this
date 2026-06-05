@@ -60,22 +60,6 @@ nav.open .nav-links {
     margin-top: 14px;
 }
 
-/* Mobile nav stays in one column so dropdown links never overflow. */
-nav.open .nav-dropdown {
-    grid-column: 1 / -1;
-    min-width: 0;
-}
-
-/* Mobile uses Services as a normal hub link; child pages live on the services hub. */
-nav.open .dropdown-menu {
-    display: none !important;
-}
-
-nav.open .nav-dropdown-toggle::after {
-    content: "";
-    margin-left: 0;
-}
-
 nav.open {
     grid-template-areas:
         "logo lang menu"
@@ -111,26 +95,6 @@ nav.open {
     background-color: rgba(255, 230, 0, 0.1);
     border-color: #FFE600;
     color: #FFE600;
-}
-
-.nav-dropdown-toggle::after {
-    content: "▾";
-    font-size: 10px;
-    margin-left: 6px;
-}
-
-.dropdown-menu {
-    display: none;
-    gap: 8px;
-    grid-template-columns: 1fr;
-    list-style: none;
-    margin-top: 0;
-    min-width: 220px;
-    z-index: 25;
-}
-
-.nav-dropdown.open .dropdown-menu {
-    display: grid;
 }
 
 .logo {
@@ -1026,38 +990,6 @@ footer p {
         min-height: 0;
         padding: 10px 16px;
         white-space: nowrap;
-    }
-
-    .nav-dropdown:hover .dropdown-menu,
-    .nav-dropdown:focus-within .dropdown-menu,
-    .nav-dropdown.open .dropdown-menu {
-        display: grid;
-    }
-
-    .nav-dropdown {
-        padding-bottom: 10px;
-        margin-bottom: -10px;
-    }
-
-    .dropdown-menu {
-        background-color: #422954;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 4px;
-        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
-        left: 50%;
-        margin-top: 0;
-        padding: 8px;
-        position: absolute;
-        top: calc(100% - 1px);
-        transform: translateX(-50%);
-    }
-
-    .dropdown-menu a {
-        font-size: 12px;
-        justify-content: flex-start;
-        min-width: 240px;
-        padding: 10px 12px;
-        text-align: left;
     }
 
     .mobile-menu-toggle {
