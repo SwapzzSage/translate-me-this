@@ -42,19 +42,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setupQuoteButton();
 
+    const getCtaLocation = link => {
+        if (link.closest("nav")) {
+            return "navigation";
+        }
+
+        if (link.closest("footer")) {
+            return "footer";
+        }
+
+        if (link.closest("#hero")) {
+            return "hero";
+        }
+
+        if (link.closest("#contact")) {
+            return "contact";
+        }
+
+        if (link.closest("#services, .service-detail, .services-page")) {
+            return "services";
+        }
+
+        if (link.closest("#why-us")) {
+            return "why_us";
+        }
+
+        return "page_content";
+    };
+
     const trackOutboundWhatsApp = link => {
         if (typeof window.gtag !== "function") {
             return;
         }
 
+        const eventData = {
+            method: "whatsapp",
+            link_url: link.href,
+            link_text: link.textContent.trim(),
+            cta_location: getCtaLocation(link),
+            page_language: pageLanguage,
+            page_location: window.location.href,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            transport_type: "beacon"
+        };
+
         window.gtag("event", "whatsapp_click", {
+            ...eventData,
             event_category: "lead",
-            event_label: link.href
+            event_label: `${eventData.cta_location}: ${eventData.link_text}`
         });
         window.gtag("event", "generate_lead", {
-            method: "whatsapp",
+            ...eventData,
             event_category: "lead",
-            event_label: link.href
+            event_label: `${eventData.cta_location}: ${eventData.link_text}`,
+            currency: "USD",
+            value: 1
         });
     };
 
