@@ -1240,8 +1240,19 @@ footer p {
     margin-bottom: 10px;
 }
 
-.service-related-links {
-    text-align: left;
+#services .service-related-links {
+    margin: 44px auto 0;
+    max-width: 1040px;
+    text-align: center;
+}
+
+#services .service-related-links h2 {
+    color: #422954;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.18;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 
@@ -1294,5 +1305,14 @@ footer p {
     .about-service-links h2,
     .service-related-links h2 {
         font-size: 24px;
+    }
+
+    #services .service-related-links {
+        margin-top: 32px;
+    }
+
+    #services .service-related-links h2 {
+        font-size: 22px;
+        margin-bottom: 16px;
     }
 }
