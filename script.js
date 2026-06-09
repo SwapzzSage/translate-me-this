@@ -70,40 +70,54 @@ document.addEventListener("DOMContentLoaded", () => {
         return "page_content";
     };
 
+    const isWhatsAppLink = link => {
+        try {
+            const hostname = new URL(link.href, window.location.href).hostname
+                .toLowerCase()
+                .replace(/^www\./, "");
+
+            return hostname === "wa.me" || hostname === "api.whatsapp.com";
+        } catch {
+            return false;
+        }
+    };
+
     const trackOutboundWhatsApp = link => {
         if (typeof window.gtag !== "function") {
             return;
         }
 
+        const buttonText = link.textContent.trim() || link.getAttribute("aria-label") || "WhatsApp";
         const eventData = {
-            method: "whatsapp",
+            page_location: window.location.href,
+            page_title: document.title,
             link_url: link.href,
-            link_text: link.textContent.trim(),
+            button_text: buttonText,
             cta_location: getCtaLocation(link),
             page_language: pageLanguage,
-            page_location: window.location.href,
-            page_path: window.location.pathname,
-            page_title: document.title,
             transport_type: "beacon"
         };
 
         window.gtag("event", "whatsapp_click", {
             ...eventData,
             event_category: "lead",
-            event_label: `${eventData.cta_location}: ${eventData.link_text}`
-        });
-        window.gtag("event", "generate_lead", {
-            ...eventData,
-            event_category: "lead",
-            event_label: `${eventData.cta_location}: ${eventData.link_text}`,
-            currency: "USD",
-            value: 1
+            event_label: `${eventData.cta_location}: ${eventData.button_text}`
         });
     };
 
-    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => {
-        link.addEventListener("click", () => trackOutboundWhatsApp(link));
-    });
+    if (!window.__tmtWhatsAppTrackingInstalled) {
+        window.__tmtWhatsAppTrackingInstalled = true;
+
+        document.addEventListener("click", event => {
+            const link = event.target instanceof Element
+                ? event.target.closest("a[href]")
+                : null;
+
+            if (link && isWhatsAppLink(link)) {
+                trackOutboundWhatsApp(link);
+            }
+        }, { capture: true });
+    }
 
     const contactForm = document.querySelector('#contact form');
 
