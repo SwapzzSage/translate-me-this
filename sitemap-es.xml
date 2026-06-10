@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.translatemethis.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/servicios/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/acerca-de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/about/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/preguntas-frecuentes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/preguntas-frecuentes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/faq/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/contacto/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/contact/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-migratoria/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/immigration-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-migratoria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/immigration-translation/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-legal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/legal-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-legal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/legal-translation/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-academica/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/academic-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-academica/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/academic-translation/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-apostilla/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/apostille-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-apostilla/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/apostille-translation/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/servicios/traduccion-corporativa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/corporate-translation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/traduccion-corporativa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/corporate-translation/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.translatemethis.com/es/servicios/interpretacion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.translatemethis.com/services/interpretation/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://www.translatemethis.com/es/servicios/interpretacion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.translatemethis.com/services/interpretation/"/>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+</urlset>
