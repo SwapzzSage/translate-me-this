@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.translatemethis.com/sitemap.xml
-Sitemap: https://www.translatemethis.com/sitemap-es.xml
+Sitemap: https://translatemethis.com/sitemap.xml
